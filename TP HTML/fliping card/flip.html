@@ -8,6 +8,9 @@
     <title>Document</title>
     <style>
         body {
+            /*  background-image: url(logo-mocked-u^p.jpg); */
+
+            background-size: cover;
             background-image: linear-gradient(to left, rgb(51, 226, 203), rgb(77, 8, 80));
         }
 
@@ -21,6 +24,7 @@
             margin: auto;
             margin-top: 70px;
             border: 12px rgb(202, 202, 219) ridge;
+
 
 
         }
@@ -42,32 +46,56 @@
         }
 
         input:checked+label {
-            transform: rotateY(180deg);
-            scale: 110%;
+            /*  transform: rotateY(180deg); */
+            scale: 120%;
             background-image: url(post_03.jpg);
-            transition: 1.5s ease;
-            box-shadow: 0 0 25px;
+            transition: 1.5s ease-in-out;
+            box-shadow: 0 0 50px;
+            transform: rotateY(1turn);
+            animation-name: rotate;
 
         }
 
-        input:not(:checked) {
-            transform: rotateY(0deg);
-            scale: 100%;
-            transition: 1s ease;
-            box-shadow: 0 0 01px;
+        input:not(:checked)+label {
+            /*  transform: rotateY(180deg); */
+            scale: 80%;
+            /*  background-image: url(post_03.jpg); */
+            transition: 1.5s ease-in-out;
+            box-shadow: 0 0 05px;
+            transform: rotateY(-turn);
+
+
+
+
         }
+
+        /* .card2{
+            background-color: #7e2020;
+            width: 300px;
+            height: 400px;
+            
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 70px;
+            border: 12px rgb(202, 202, 219) ridge;
+
+
+        } */
     </style>
 </head>
 
 <body>
-    
+
     <div>
         <input type="checkbox" id="check">
         <label for="check" class="face card">
-            <h1> Me!!!</h1>
+            <h1 style="color: rgb(251, 253, 255); text-shadow: 0 0 10px rgb(255, 255, 255);">
+                <span>CLICK</span><br><span>HERE</span></h1>
         </label>
 
     </div>
+    <div class="card2"></div>
 </body>
 
 </html>
